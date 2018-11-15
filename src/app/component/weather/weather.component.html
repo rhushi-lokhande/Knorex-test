@@ -1,0 +1,23 @@
+<div class="weather-container">
+	<div *ngIf="isToday">
+		<div class="row">
+			<div class="col-8 img-container"><span>{{weatherDetails.temp.day}} &#8451;</span></div>
+			<div class="col-4 img-container">
+				<img [src]="getIcon()" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div *ngIf="!isToday">
+		<div class="row">
+			<div class="col-8 text-center">
+				<span>{{getDate()}}</span>
+				<hr>
+				<span>{{weatherDetails.temp.day}} &#8451;</span>
+			</div>
+			<div class="col-4 img-container">
+				<img [src]="getIcon()" alt="">
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+.weather-container{
+    margin: 15px 0 15px 0;
+    padding: 15px;
+    font-weight: bold;
+    min-height: 111px;
+}
+.weather-container .row{
+    border: solid 1px #bebebe;
+    background-color: #ffffffbd;
+    box-shadow: 0px 0px 4px 3px #c0c0c070;
+    padding: 15px;
+}
+
+
+.img-container {
+    display: flex;
+    flex-direction: row;     
+    justify-content: center;
+    align-items: center;    
+}
+
+@media (max-width: 768px){
+    .weather-container .row{
+        padding: 15px 5px 15px 5px;
+    }
+}
+
+@media (min-width: 518px){
+    .weather-container{
+        padding: 5px 15px;
+        margin: 5px 0 5px 0;
+    }
+    .weather-container .row{
+        padding: 15px 5px 15px 5px;
+    }
+}
